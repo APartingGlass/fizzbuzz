@@ -5,6 +5,7 @@
  */
 
 function sumOfArray(arr) {
+    // returns sum of all numbers in array
     var sum = 0;
     for (i = 0; i < arr.length; i++) {
         sum += arr[i];
@@ -25,6 +26,7 @@ console.assert(sumOfArray([10, 9, 8]) === 27);
  */
 
 function sum(a, b) {
+    // returns sum of two numbers
     return (a + b)
 }
 
@@ -41,6 +43,7 @@ console.assert(sum(4, 100) === 104);
 
 
 function GCD(a, b) {
+    // returns the Greatest Common Denominator of two numbers
     var larger = Math.max(a,b);
     var smaller = Math.min(a,b);
     remainder = (larger % smaller)
@@ -63,6 +66,7 @@ console.assert(GCD(50, 20) === 10);
  */
 
 function LCM(a, b) {
+    // Returns Lowest Common Multiple of two numbers
     if (a === 0) {
         return b;
     } else if (b == 0) {
@@ -88,6 +92,7 @@ console.assert(LCM(0, 1) === 1)
  */
 
 function fizzbuzz(N) {
+    // returns combination of strings "."; "fizz"; "buzz"; "fizzbuzz" based on denominators.
     var stringtotal = ''
     for (i = 1; i < (N + 1); i++) {
         if (i % 5 === 0 && i % 3 === 0) {
