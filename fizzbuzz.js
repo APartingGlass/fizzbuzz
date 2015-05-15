@@ -41,13 +41,8 @@ console.assert(sum(4, 100) === 104);
 
 
 function GCD(a, b) {
-    if (a > b) {
-        var larger = a;
-        var smaller = b;
-    } else {
-        var larger = b;
-        var smaller = a;
-    }
+    var larger = Math.max(a,b);
+    var smaller = Math.min(a,b);
     remainder = (larger % smaller)
     if (remainder === 0) {
         return smaller
@@ -105,7 +100,6 @@ function fizzbuzz(N) {
             stringtotal += "."
         }
     }
-    console.log(stringtotal)
     return stringtotal
 }
 
